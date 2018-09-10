@@ -4,4 +4,9 @@
 
 import 'package:flutter/widgets.dart';
 
-void main() => runApp(const Center(child: Text('Hello, world!', textDirection: TextDirection.ltr)));
+void main() => runApp(
+  new Container(
+    constraints: BoxConstraints.tightFor(width: 500.0, height: 500.0),
+    child: new Image(image: new AssetImage('assets/test.gif'))
+  )
+);
